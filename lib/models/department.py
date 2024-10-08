@@ -129,6 +129,7 @@ class Department:
             cls.all[department.id] = department
         return department
 
+
     @classmethod
     def get_all(cls):
         """Return a list containing a Department object per row in the table"""
@@ -178,3 +179,6 @@ class Department:
         return [
             Employee.instance_from_db(row) for row in rows
         ]
+
+
+
